@@ -1,10 +1,10 @@
 import { ContainerScroll } from "./components/ContainerScrollMain";
 import Bg from '../assets/bg.png'
 import Image from 'next/image';
-// import { HoverImageLinks } from "./components/HoverImages";
 import { Spotlight } from "./components/Spotlight";
 import { Example } from "./components/Contact";
 import { SlideTabsExample } from "./components/Header";
+import { SmoothScrollHero } from "./components/SmoothScrollHero";
 export default function Home() {
   return (
     <div>
@@ -31,9 +31,9 @@ export default function Home() {
             draggable={false}
           />
         </ContainerScroll>
+        <SmoothScrollHero />
       </div>
       <Example />
-      {/* <HoverImageLinks /> */}
     </div>  
   );
 }

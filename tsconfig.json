@@ -21,6 +21,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/components/SmoothScrollHero.jsx", "src/app/components/Contact.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/components/SmoothScrollHero.jsx", "src/app/components/Contact.jsx", "src/app/components/SocialMedia.jsx"],
   "exclude": ["node_modules"]
 }

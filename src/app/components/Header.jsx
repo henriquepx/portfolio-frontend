@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export const SlideTabsExample = () => {
   return (
-    <div className="bg-neutral-950 border-white border-4 py-6">
+    <div className="bg-neutral-650 border-white border-4 py-6">
       <SlideTabs />
     </div>
   );

@@ -1,13 +1,13 @@
 "use client"
-
 import { useMotionValue, motion, useSpring, useTransform } from "framer-motion";
 import React, { useRef } from "react";
 import { FiArrowRight } from "react-icons/fi";
 
 export const HoverImageLinks = () => {
   return (
-    <section className="bg-neutral-950 p-4 md:p-8">
+    <section className="bg-neutral-950 max-w-[1100px] w-full mx-[auto] my-[0] p-4 md:p-8">
       <div className="mx-auto max-w-5xl">
+        <p className="mb-1.5 text-sm font-mont text-neutral-300 uppercase">/ Projetos</p>
         <Link
           heading="Lofi"
           subheading="A lofi website to focus and concentrate + pomodoro timer."
