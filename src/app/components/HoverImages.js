@@ -9,32 +9,26 @@ export const HoverImageLinks = () => {
     <section className="bg-neutral-950 p-4 md:p-8">
       <div className="mx-auto max-w-5xl">
         <Link
-          heading="About"
-          subheading="Learn what we do here"
+          heading="Lofi"
+          subheading="A lofi website to focus and concentrate + pomodoro timer."
           imgSrc='/rxscreen.jpg'
           href="#"
         />
         <Link
-          heading="Clients"
-          subheading="We work with great people"
-          imgSrc='/rxscreen.jpg'
+          heading="Gitboard"
+          subheading="A comprehensive guide to essential Git commands and workflows, providing step-by-step instructions and practical examples for mastering version control."
+          imgSrc='/dsmscreen.jpg'
           href="#"
         />
         <Link
-          heading="Portfolio"
-          subheading="Our work speaks for itself"
-          imgSrc='/rxscreen.jpg'
+          heading="CodeDuo"
+          subheading="A platform designed to enhance collaborative coding and problem-solving experiences. It allows users to write and edit code in real time, facilitating seamless teamwork and problem-solving."
+          imgSrc='/japascreen.jpg'
           href="#"
         />
         <Link
-          heading="Careers"
+          heading="DSM Consultoria"
           subheading="We want cool people"
-          imgSrc='/rxscreen.jpg'
-          href="#"
-        />
-        <Link
-          heading="Fun"
-          subheading="Incase you're bored"
           imgSrc='/rxscreen.jpg'
           href="#"
         />
@@ -107,7 +101,7 @@ const Link = ({ heading, imgSrc, subheading, href }) => {
             </motion.span>
           ))}
         </motion.span>
-        <span className="relative z-10 mt-2 block text-base text-neutral-500 transition-colors duration-500 group-hover:text-neutral-50">
+        <span className="relative z-10 mt-2 block max-w-[50ch] text-base text-neutral-500 transition-colors duration-500 group-hover:text-neutral-50">
           {subheading}
         </span>
       </div>
