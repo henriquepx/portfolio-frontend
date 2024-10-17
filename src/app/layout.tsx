@@ -1,11 +1,19 @@
 import "./globals.css";
-import Head from "next/head";
+import { Metadata } from 'next'
 import { Montserrat } from 'next/font/google';
 
 const montserrat = Montserrat({
   subsets: ['latin'],
   weight: ['400', '700', '800'],
 });
+
+export const metadata: Metadata = {
+  title: 'Henrique Pinheiro',
+  description: 'Desenvolvedor Front-end com expertise em aplicações web e mobile. Graduado em Análise e Desenvolvimento de Sistemas.',
+  icons: {
+    icon: '/logo.jpeg'
+  }
+}
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -13,11 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR" className={montserrat.className}> 
-      <Head>
-        <title>Henrique Pinheiro</title>
-        <link rel="icon" href="/logo.png" />
-      </Head>
-      <body className="bg-neutral-950">
+      <body className="bg-neutral-950 overflow-x-hidden">
         {children}
       </body>
     </html>

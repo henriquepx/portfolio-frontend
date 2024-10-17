@@ -35,3 +35,43 @@ body {
     text-wrap: balance;
   }
 }
+
+.loader {
+  height: 80px;
+  width: 50px;
+  border: 10px solid #000;
+  box-sizing: border-box;
+  background: 
+    conic-gradient(from 160deg at top, #fff 40deg, transparent 0) top,
+    conic-gradient(from -20deg at bottom, #fff 40deg, transparent 0) bottom,
+    radial-gradient(farthest-side, #fff 98%, transparent) bottom/100% 50%,
+    #000;
+  background-size: 100% 50%;
+  background-repeat: no-repeat;
+  filter: blur(4px) contrast(10); 
+  animation: l20 1s infinite alternate;
+}
+
+@keyframes l20 {
+  0%, 30% {
+    background-position: top, bottom, bottom;
+  }
+  70%, 100% {
+    background-position: top, bottom, top;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 12px; 
+  padding-top: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ffffff; 
+  border: 3px solid transparent; 
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #2b2b2b; 
+}

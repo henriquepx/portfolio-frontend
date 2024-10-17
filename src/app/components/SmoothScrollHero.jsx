@@ -12,7 +12,7 @@ import { HoverImageLinks } from "./HoverImages";
 
 export const SmoothScrollHero = () => {
   return (
-    <div className="bg-zinc-950">
+    <div className="bg-zinc-950 mt-20">
       <ReactLenis
         root
         options={{
@@ -139,7 +139,7 @@ const Schedule = () => {
   return (
     <section
       id="launch-schedule"
-      className="mx-auto max-w-5xl px-4 py-48 text-white"
+      className="mx-auto max-w-5xl px-4 py-4 text-white"
     >
       <HoverImageLinks />
     </section>
